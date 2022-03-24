@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/FormulaOne/static/css/main.d62d54d3.css",
-    "main.js": "/FormulaOne/static/js/main.c655297e.js",
+    "main.css": "/FormulaOne/static/css/main.dc0dab54.css",
+    "main.js": "/FormulaOne/static/js/main.714e3a5f.js",
     "static/js/787.33dcb8c5.chunk.js": "/FormulaOne/static/js/787.33dcb8c5.chunk.js",
+    "static/media/F1_2021__0000.jpg27E6FB37-7FE1-40B0-988F-ultHQ.png": "/FormulaOne/static/media/F1_2021__0000.jpg27E6FB37-7FE1-40B0-988F-D56E4D3AED5EDefaultHQ.0bbe2af5854dca0f88f4.png",
     "static/media/bg-image.jpg": "/FormulaOne/static/media/bg-image.b3ae9a3824988f69e0fe.jpg",
     "static/media/alpine.png": "/FormulaOne/static/media/alpine.b1b72060e2ffae719c31.png",
     "static/media/mercedes.png": "/FormulaOne/static/media/mercedes.8a9b5cbd32b2307d0e68.png",
@@ -36,12 +37,12 @@
     "static/media/TSU.png": "/FormulaOne/static/media/TSU.87a98f333b74c5746e24.png",
     "static/media/HAM.png": "/FormulaOne/static/media/HAM.47775e1416b353cb83df.png",
     "index.html": "/FormulaOne/index.html",
-    "main.d62d54d3.css.map": "/FormulaOne/static/css/main.d62d54d3.css.map",
-    "main.c655297e.js.map": "/FormulaOne/static/js/main.c655297e.js.map",
+    "main.dc0dab54.css.map": "/FormulaOne/static/css/main.dc0dab54.css.map",
+    "main.714e3a5f.js.map": "/FormulaOne/static/js/main.714e3a5f.js.map",
     "787.33dcb8c5.chunk.js.map": "/FormulaOne/static/js/787.33dcb8c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d62d54d3.css",
-    "static/js/main.c655297e.js"
+    "static/css/main.dc0dab54.css",
+    "static/js/main.714e3a5f.js"
   ]
 }
