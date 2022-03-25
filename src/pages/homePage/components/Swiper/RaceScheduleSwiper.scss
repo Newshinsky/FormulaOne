@@ -1,0 +1,55 @@
+.swiper {
+    max-width: 1024px;
+    margin-top: 5vw;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    img {
+        height: 3.7vw;
+        width: 6vw;
+        border-radius: 1vw;
+    }
+
+    h1 {
+        font-size: 2vw;
+        margin: 0;
+        opacity: .5;
+    }
+
+    h3 {
+        font-size: 1vw;
+        margin: 0;
+        opacity: .5;
+    }
+
+    .race__info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1050px) {
+    .swiper {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 800px) {
+    .swiper {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 670px) {
+    .swiper {
+        max-width: 320px;
+    }
+}

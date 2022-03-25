@@ -14,7 +14,9 @@ const NavBar = () => {
                     <i className="fas fa-bars"></i>
                 </label>
                 <label className="logox">
-                    <img src={f1_logo} alt="" />
+                    <Link to={ROUTES_NAMES.HOME}>
+                        <img src={f1_logo} alt="" />
+                    </Link>
                 </label>
                 <ul>
                     <li>

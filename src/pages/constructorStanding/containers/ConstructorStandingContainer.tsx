@@ -16,9 +16,6 @@ const ConstructorStandingContainer = () => {
     const { ConstructorStandings } = useSelector(constructorStandingDataSelector)
     const isLoading = useSelector(isLoadingSelector)
 
-
-
-
     console.log(ConstructorStandings)
 
     useEffect(() => {
