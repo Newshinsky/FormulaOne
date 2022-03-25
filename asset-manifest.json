@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/FormulaOne/static/css/main.dc0dab54.css",
-    "main.js": "/FormulaOne/static/js/main.714e3a5f.js",
+    "main.css": "/FormulaOne/static/css/main.3dbe7a88.css",
+    "main.js": "/FormulaOne/static/js/main.453ecc3a.js",
     "static/js/787.33dcb8c5.chunk.js": "/FormulaOne/static/js/787.33dcb8c5.chunk.js",
     "static/media/F1_2021__0000.jpg27E6FB37-7FE1-40B0-988F-ultHQ.png": "/FormulaOne/static/media/F1_2021__0000.jpg27E6FB37-7FE1-40B0-988F-D56E4D3AED5EDefaultHQ.0bbe2af5854dca0f88f4.png",
     "static/media/bg-image.jpg": "/FormulaOne/static/media/bg-image.b3ae9a3824988f69e0fe.jpg",
+    "static/media/US.jpg": "/FormulaOne/static/media/US.f5f406d4d8e5e99d5db5.jpg",
     "static/media/alpine.png": "/FormulaOne/static/media/alpine.b1b72060e2ffae719c31.png",
     "static/media/mercedes.png": "/FormulaOne/static/media/mercedes.8a9b5cbd32b2307d0e68.png",
     "static/media/red_bull.png": "/FormulaOne/static/media/red_bull.571742aa2e352f44715e.png",
@@ -15,6 +16,7 @@
     "static/media/mclaren.png": "/FormulaOne/static/media/mclaren.5712793012b7f6a2ef5e.png",
     "static/media/williams.png": "/FormulaOne/static/media/williams.88ae62b7910ff1c7a913.png",
     "static/media/alfa.png": "/FormulaOne/static/media/alfa.40addc1110e353cec344.png",
+    "static/media/UAE.jpg": "/FormulaOne/static/media/UAE.dcbfb9ba3a0cc5093561.jpg",
     "static/media/ALO.png": "/FormulaOne/static/media/ALO.397b5a3eae48f7f97349.png",
     "static/media/HUL.png": "/FormulaOne/static/media/HUL.1a480b88fc02582d426a.png",
     "static/media/OCO.png": "/FormulaOne/static/media/OCO.566a56b13b0d811c0014.png",
@@ -36,13 +38,14 @@
     "static/media/ALB.png": "/FormulaOne/static/media/ALB.fe56767e0e35f392027e.png",
     "static/media/TSU.png": "/FormulaOne/static/media/TSU.87a98f333b74c5746e24.png",
     "static/media/HAM.png": "/FormulaOne/static/media/HAM.47775e1416b353cb83df.png",
+    "static/media/UK.png": "/FormulaOne/static/media/UK.bdedfc54f084cac99db5.png",
     "index.html": "/FormulaOne/index.html",
-    "main.dc0dab54.css.map": "/FormulaOne/static/css/main.dc0dab54.css.map",
-    "main.714e3a5f.js.map": "/FormulaOne/static/js/main.714e3a5f.js.map",
+    "main.3dbe7a88.css.map": "/FormulaOne/static/css/main.3dbe7a88.css.map",
+    "main.453ecc3a.js.map": "/FormulaOne/static/js/main.453ecc3a.js.map",
     "787.33dcb8c5.chunk.js.map": "/FormulaOne/static/js/787.33dcb8c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc0dab54.css",
-    "static/js/main.714e3a5f.js"
+    "static/css/main.3dbe7a88.css",
+    "static/js/main.453ecc3a.js"
   ]
 }
