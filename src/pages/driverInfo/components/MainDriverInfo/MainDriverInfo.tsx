@@ -1,9 +1,8 @@
-import React from 'react'
-import { FIRST_ELEMENT_IN_ARRAY } from '../../../../constants'
+import React, { memo } from 'react'
 import { DriverIMG } from '../../../../constants/DriversIMG'
 import { StandingsListsType } from '../../../../types/DriverItemInfoType'
-
 import "./MainDriverInfo.scss"
+
 
 type PropsType = {
     code: string
@@ -13,44 +12,31 @@ type PropsType = {
     nationality: string
     permanentNumber: string
     StandingsLists: StandingsListsType[]
+    champ: number
+    highestPos: number
+    wins: number
+    url: string
 }
 
-const MainDriverInfo = (props: PropsType) => {
+const MainDriverInfo = memo((props: PropsType) => {
+
     return (
-        <div className="container driverInfoResult__wrapper">
+        <div className="container driverInfo__wrapper">
+            <div className="driver__image">
+                <img src={`${DriverIMG[props.code]}`} alt="Team Car" />
+                <h1> {props.givenName.toLocaleUpperCase()} {props.familyName.toUpperCase()}</h1>
+                <h1>#{props.permanentNumber}</h1>
+                <a href={props.url} target="_blank" rel="noreferrer"> More information </a>
+            </div>
             <div className="driver__info">
-                <div className="driver__img">
-                    <img src={`${DriverIMG[props.code]}`} alt="Driver" />
-                </div>
-                <div className="driver__text">
-                    <h1>{props.givenName.toUpperCase()} {props.familyName.toUpperCase()}</h1>
-                    <h1>DOB: {props.dateOfBirth}</h1>
-                    <h1>NATIONALITY: {props.nationality.toUpperCase()}</h1>
-                    <h1>NUMBER: {props.permanentNumber} </h1>
-                </div>
+                <h2>DATE OF BIRTH: {props.dateOfBirth}</h2>
+                <h2>NATIONALITY: {props.nationality.toLocaleUpperCase()}</h2>
+                <h2>CHAMPIONSHIP: {props.champ} </h2>
+                <h2> HIGHEST POSITION: {props.highestPos}</h2>
+                <h2>WINS: {props.wins}</h2>
             </div>
-            <div className="driver__result">
-                {props.StandingsLists.map((e: StandingsListsType) => {
-                    return (
-                        <div className="main__result">
-                            <div className="result__year">
-                                <h1> YEAR: {e.season} </h1>
-                            </div>
-                            <div className="driver__result__info">
-                                <h2> TEAMS: {e.DriverStandings[FIRST_ELEMENT_IN_ARRAY].Constructors[FIRST_ELEMENT_IN_ARRAY].name} </h2>
-                                <h2> POINTS: {e.DriverStandings[FIRST_ELEMENT_IN_ARRAY].points} </h2>
-                                <h2> POSITION: {e.DriverStandings[FIRST_ELEMENT_IN_ARRAY].position} </h2>
-                                <h2> WINS: {e.DriverStandings[FIRST_ELEMENT_IN_ARRAY].wins} </h2>
-                            </div>
-                        </div>
-                    )
-                })}
-
-
-            </div>
-
         </div>
     )
-}
+})
 
 export default MainDriverInfo
