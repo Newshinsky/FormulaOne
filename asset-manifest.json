@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FormulaOne/static/css/main.37b8fa12.css",
-    "main.js": "/FormulaOne/static/js/main.848931ec.js",
+    "main.css": "/FormulaOne/static/css/main.d155f675.css",
+    "main.js": "/FormulaOne/static/js/main.4f73c470.js",
     "static/js/787.33dcb8c5.chunk.js": "/FormulaOne/static/js/787.33dcb8c5.chunk.js",
     "static/media/bg-image.jpg": "/FormulaOne/static/media/bg-image.b3ae9a3824988f69e0fe.jpg",
     "static/media/US.jpg": "/FormulaOne/static/media/US.f5f406d4d8e5e99d5db5.jpg",
@@ -50,12 +50,12 @@
     "static/media/f1_logo.png": "/FormulaOne/static/media/f1_logo.57412500f9a3fb6e4ad5.png",
     "static/media/UK.png": "/FormulaOne/static/media/UK.bdedfc54f084cac99db5.png",
     "index.html": "/FormulaOne/index.html",
-    "main.37b8fa12.css.map": "/FormulaOne/static/css/main.37b8fa12.css.map",
-    "main.848931ec.js.map": "/FormulaOne/static/js/main.848931ec.js.map",
+    "main.d155f675.css.map": "/FormulaOne/static/css/main.d155f675.css.map",
+    "main.4f73c470.js.map": "/FormulaOne/static/js/main.4f73c470.js.map",
     "787.33dcb8c5.chunk.js.map": "/FormulaOne/static/js/787.33dcb8c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37b8fa12.css",
-    "static/js/main.848931ec.js"
+    "static/css/main.d155f675.css",
+    "static/js/main.4f73c470.js"
   ]
 }
