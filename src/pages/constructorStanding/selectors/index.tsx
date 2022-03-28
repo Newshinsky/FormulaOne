@@ -1,7 +1,8 @@
+import { ConstructorStandingDefaultStateType } from "../../../types/ConstructorStandingTypes"
 
 
 
 
-export const constructorStandingDataSelector = (state: any) => state.constructorStanding.constructorStandingData
-export const isLoadingSelector = (state: any) => state.constructorStanding.isLoading
+export const constructorStandingDataSelector = (state: { constructorStanding: ConstructorStandingDefaultStateType }) => state.constructorStanding.constructorStandingData
+export const isLoadingSelector = (state: { constructorStanding: ConstructorStandingDefaultStateType }) => state.constructorStanding.isLoading
 
