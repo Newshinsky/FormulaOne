@@ -1,7 +1,7 @@
-import React from 'react'
-import { CarsIMG } from '../../../constants/CarIMG'
-import { TeamColor } from '../../../constants/teamColor'
-import { ConstructorStandingsType } from '../../../types/ConstructorStandingTypes'
+import React, { memo } from 'react'
+import { CarsIMG } from '../../../../constants/CarIMG'
+import { TeamColor } from '../../../../constants/teamColor'
+import { ConstructorStandingsType } from '../../../../types/ConstructorStandingTypes'
 import "./ConstructorStanding.scss"
 
 
@@ -10,10 +10,11 @@ type PropsType = {
     ConstructorStandings: ConstructorStandingsType[]
 }
 
-const ConstructorStanding = (props: PropsType) => {
+const ConstructorStanding = memo((props: PropsType) => {
     return (
         <div className="container constructor__wrapper">
-            <h1>Constructor Standing </h1>
+            <h2> Constructor </h2>
+            <h1> STANDING 2022 </h1>
             <div className="constructor_info">
                 {props.ConstructorStandings.map((e: ConstructorStandingsType) => {
                     return (
@@ -34,6 +35,6 @@ const ConstructorStanding = (props: PropsType) => {
             </div>
         </div>
     )//
-}
+})
 
 export default ConstructorStanding

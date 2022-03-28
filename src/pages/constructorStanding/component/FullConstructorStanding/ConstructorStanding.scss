@@ -6,7 +6,16 @@
     align-items: center;
 
     h1 {
+        color: red;
         font-size: 2vw;
+        margin: 0;
+    }
+
+    h2 {
+        color: rgb(0, 0, 0);
+        font-size: 3vw;
+        margin: 0;
+        font-weight: normal;
     }
 
     .constructor_info {
@@ -14,6 +23,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         cursor: pointer;
+        justify-content: center;
 
 
 

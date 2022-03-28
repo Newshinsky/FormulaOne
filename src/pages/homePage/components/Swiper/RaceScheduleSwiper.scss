@@ -1,9 +1,9 @@
 .swiper {
-    max-width: 1024px;
-    margin-top: 5vw;
+    max-width: 100vw;
 }
 
 .swiper-slide {
+    padding: 4vw 0;
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -36,20 +36,8 @@
     }
 }
 
-@media (max-width: 1050px) {
-    .swiper {
-        max-width: 768px;
-    }
-}
+@media (max-width: 1200px) {}
 
-@media (max-width: 800px) {
-    .swiper {
-        max-width: 640px;
-    }
-}
+@media (max-width: 800px) {}
 
-@media (max-width: 670px) {
-    .swiper {
-        max-width: 320px;
-    }
-}
+@media (max-width: 670px) {}

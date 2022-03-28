@@ -21,12 +21,12 @@ const NavBar = () => {
                 <ul>
                     <li>
                         <Link to={ROUTES_NAMES.DRIVER_STANDING}>
-                            d
+                            Driver Standing
                         </Link>
                     </li>
                     <li>
                         <Link to={ROUTES_NAMES.CONSTRUCTOR_STANDING}>
-                            c
+                            Constructor Standing
                         </Link>
                     </li>
                     <li><a href="##">Services</a></li>

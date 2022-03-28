@@ -12,7 +12,7 @@ const DriverStandingContainer = () => {
 
 
     const dispatch = useDispatch()
-    const { DriverStandings, season, round } = useSelector(driverStandingDataSelector)
+    const { DriverStandings } = useSelector(driverStandingDataSelector)
     const isLoading = useSelector(isLoadingSelector)
 
 

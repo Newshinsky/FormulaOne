@@ -50,13 +50,10 @@ export const getDriverStandingDataPageReducer = handleActions({
   },
   [actions.GET_DRIVER_STANDING_SUCCESS.toString()]: (state, { payload }) => {
 
-    let copyDriverStandingData = JSON.parse(JSON.stringify(payload.response.MRData.StandingsTable.StandingsLists[FIRST_ELEMENT_IN_ARRAY]))
-    SwapElemInArray(copyDriverStandingData.DriverStandings, 0, 1)
-
     return {
       ...state,
       isLoading: false,
-      driverStandingData: copyDriverStandingData
+      driverStandingData: payload.response.MRData.StandingsTable.StandingsLists[FIRST_ELEMENT_IN_ARRAY]
     }
   },
   [actions.GET_DRIVER_STANDING_FAIL.toString()]: (state, { payload }) => {

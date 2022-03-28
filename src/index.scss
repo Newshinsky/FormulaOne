@@ -1,12 +1,16 @@
 body {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
-    background: rgb(156, 26, 26);
-    background: radial-gradient(circle, rgb(184, 39, 39) 0%, rgba(0, 0, 0, 1) 100%) ;
+    background: rgb(255, 255, 255);
+
     display: flex;
     justify-content: center;
 
     .container {
         max-width: 1200px;
+    }
+
+    .bg-image {
+        background-image: url(./img/bg.jpg);
     }
 
     h1,
@@ -15,7 +19,7 @@ body {
     h4,
     h5,
     h6,
-    p{
+    p {
         font-family: Poppins;
         color: white;
         z-index: 1;

@@ -1,31 +1,10 @@
 .home__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  border: 1px solid;
-  margin-top: 5vw;
   justify-content: space-around;
-  background-color: white;
-  border-radius: 6vw;
 
-  .home__text {
-    h1 {
-      font-size: 2vw;
-      color: #000
-    }
-
-    p {
-      color: #000;
-      font-size: 1vw;
-    }
-  }
-
-  .home__image {
-    max-width: 50%;
-
-    img {
-      max-width: 100%;
-      filter: drop-shadow(30px 50px 50px #000);
-    }
+  .home__driver__link {
+    margin-top: 20vw;
   }
 }

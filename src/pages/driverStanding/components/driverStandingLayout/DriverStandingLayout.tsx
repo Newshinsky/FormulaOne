@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { DriverStandingsType } from '../../../../types/DriverStandingTypes'
 
 import MainDriverStandingComponent from '../mainDriverStanding/MainDriverStandingComponent'
@@ -9,7 +9,7 @@ type PropsType = {
 }
 
 
-const DriverStandingLayout = (props: PropsType) => {
+const DriverStandingLayout = memo((props: PropsType) => {
     return (
         <>
             <MainDriverStandingComponent
@@ -19,6 +19,6 @@ const DriverStandingLayout = (props: PropsType) => {
                 DriverStandings={props.DriverStandings} />
         </>
     )
-}
+})
 
 export default DriverStandingLayout

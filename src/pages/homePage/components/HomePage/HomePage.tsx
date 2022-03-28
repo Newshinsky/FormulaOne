@@ -1,34 +1,41 @@
-import React from 'react'
-import f1car from "./../../../../img/F1_2021__0000.jpg27E6FB37-7FE1-40B0-988F-D56E4D3AED5EDefaultHQ.png"
-import "./HomePage.scss"
-
-
-
+import React, { memo } from 'react';
+import CustomButton from '../../../../components/CustomButton/CustomButton';
+import { ROUTES_NAMES } from '../../../../routes/RoutesName';
+import { ConstructorStandingsType } from '../../../../types/ConstructorStandingTypes';
+import { DriverStandingsType } from '../../../../types/DriverStandingTypes';
 import { RaceScheduleDataType } from '../../../../types/RaceScheduleType';
+import MainConstructorStanding from '../../../constructorStanding/component/MainConstructorStanding/MainConstructorStanding';
+import MainDriverStandingComponent from '../../../driverStanding/components/mainDriverStanding/MainDriverStandingComponent';
+import "./HomePage.scss";
+
+
+
 
 type PropsType = {
   RaceShedule: RaceScheduleDataType[]
+  DriverStandings: DriverStandingsType[]
+  ConstructorStandings: ConstructorStandingsType[]
 }
 
 
-const HomePage = (props: PropsType) => {
+
+
+const HomePage = memo((props: PropsType) => {
   return (
     <>
       <div className="container home__wrapper">
-        <div className="home__text">
-          <h1> New Season</h1>
-          <h1> New Flags</h1>
-          <p> AGE GROUP 20 TO 50 YEARS </p>
+        <MainDriverStandingComponent DriverStandings={props.DriverStandings} />
+        <div className="home__driver__link">
+          <CustomButton
+            route={ROUTES_NAMES.DRIVER_STANDING}
+            name="View Full Standing" />
         </div>
-        <div className="home__image">
-          <img src={f1car} alt="F1car" />
-        </div>
-        <div className="home__swiper">
-        </div>
+        <MainConstructorStanding ConstructorStandings={props.ConstructorStandings} />
+        
       </div>
     </>
   )
-}
+})
 
 export default HomePage
 

@@ -1,90 +1,79 @@
-.driverStandingWrapper,
-.card,
-.card__points,
-.card__name {
+.driverStandingWrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 2vw;
 
     h1 {
+        color: red;
         font-size: 2vw;
+        margin: 0;
     }
 
-    .mainDrivers__Wrapper {
-        margin-top: 5vw;
+    h2 {
+        color: rgb(0, 0, 0);
+        font-size: 3vw;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .mainDrivers__wrapper {
         display: flex;
         flex-direction: row;
+        margin-top: 10vw;
 
         .card {
-            padding: 2vw;
+            background-color: red;
+            border-radius: 50%;
+            width: 15vw;
+            height: 15vw;
+            margin: 2vw;
 
-            .card__info {
-                border: 5px solid black;
-                border-radius: 10%;
-                -webkit-box-shadow: -13px -27px 37px 5px rgba(0, 0, 0, 0.51);
-                -moz-box-shadow: -13px -27px 37px 5px rgba(0, 0, 0, 0.51);
-                box-shadow: -13px -27px 37px 5px rgba(0, 0, 0, 0.51);
-                padding: 2vw 4vw;
-                margin: 0;
+            .card__img {
+                .circle {
+                    position: absolute;
+                    border-radius: 50%;
+                    height: 3vw;
+                    width: 3vw;
+                    background-color: rgb(255, 255, 255);
+                    margin-left: 0vw;
+                    text-align: center;
+                }
 
-                .card__name {
-                    h1 {
-                        font-size: 1.5vw;
-                    }
+                h3 {
+                    color: rgb(255, 0, 0);
+                    font-size: 2vw;
+                }
 
-                    h2 {
-                        margin-top: 2vw;
-                        position: absolute;
-                        -webkit-transform: rotate(-45deg); //Chrome, Safari
-                        -moz-transform: rotate(-45deg); //Firefox
-                        -o-transform: rotate(-45deg); //Opera
-                        -ms-transform: rotate(-45deg); //IE
-                        transform: rotate(-45deg);
-                        z-index: 0;
-                        font-size: 7vw;
-                        color: #000;
-                        box-sizing: border-box;
-                        opacity: .2;
-                    }
+                img {
+                    clip-path: circle(50% at center center);
+                    width: 15vw;
                 }
             }
 
-            &:nth-child(1) {
-                z-index: 2;
+            .card__info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+
+                    font-size: 1vw;
+                }
+
+                h3 {
+                    color: rgb(0, 0, 0);
+                    font-size: 1.5vw;
+                }
+
+                img {
+                    width: 10vw;
+                }
             }
 
-            &:nth-child(2) {
-                margin-top: -10%;
-                z-index: 1;
-            }
 
-            &:nth-child(3) {
-                z-index: 1;
-            }
-
-            img {
-                width: 100%;
-                filter: drop-shadow(0px 5px 50px #000);
-            }
-
-            h1 {
-                font-size: 3vw;
-                margin: 0;
-                font-weight: 700;
-            }
-
-            h3 {
-                color: #000;
-                font-size: 1.2vw;
-                font-weight: 800;
-            }
-
-            h2 {
-                font-size: 1.5vw;
-                margin: 0;
-            }
         }
     }
-
 }

@@ -7,6 +7,8 @@
     border-radius: 5vw;
     flex-direction: column;
     padding: 2vw;
+    margin-top: 20vw;
+
 
     .restDriverInfo,
     .teamInfo,
@@ -37,6 +39,17 @@
         opacity: .9;
 
         .teamInfo {
+
+            a {
+                text-decoration: none;
+
+
+                h3:hover {
+                    opacity: .5;
+                    transition-duration: .5s;
+                }
+            }
+
             font-size: 1vw;
 
             h3 {
