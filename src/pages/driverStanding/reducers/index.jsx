@@ -1,8 +1,7 @@
 import { handleActions } from "redux-actions";
 import { FIRST_ELEMENT_IN_ARRAY } from "../../../constants";
-import SwapElemInArray from "../../../utils/SwapArray";
-
 import * as actions from "../actions/index";
+
 
 
 

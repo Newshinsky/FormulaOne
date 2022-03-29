@@ -15,7 +15,7 @@ const DriverContainer = () => {
     let [highestPos, setHighestPos] = useState(0)
     let [wins, setWins] = useState(0)
 
-    const { StandingsLists, code, dateOfBirth, driverId, familyName, givenName, nationality, permanentNumber, url, } = useSelector(DriverInfoSelector)
+    const { StandingsLists, code, dateOfBirth, familyName, givenName, nationality, permanentNumber, url, } = useSelector(DriverInfoSelector)
     const isLoading = useSelector(isLoadingSelector)
     const { driverName } = useParams()
 
@@ -47,6 +47,7 @@ const DriverContainer = () => {
         }
         return setWins(count)
     }, [])
+
     useEffect(() => {
         dispatch(GET_DRIVER_INFO_REQUEST(driverName))
     }, [dispatch, driverName])
@@ -58,6 +59,7 @@ const DriverContainer = () => {
     useEffect(() => {
         findHighestPos(StandingsLists)
     }, [StandingsLists, findHighestPos])
+
     useEffect(() => {
         countWins(StandingsLists)
     }, [StandingsLists, countWins])

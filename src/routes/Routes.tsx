@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import MainStanding from "../components/mainStanding/MainStanding"
+import ConstructorInfoContainer from "../pages/constructorInfo/containers/ConstructorInfoContainer"
 import ConstructorStandingContainer from "../pages/constructorStanding/containers/ConstructorStandingContainer"
 import DriverContainer from "../pages/driverInfo/containers/DriverContainer"
 import DriverStandingContainer from "../pages/driverStanding/containers/DriverStandingContainer"
@@ -23,6 +23,9 @@ const RoutesWay = () => {
                 } />
                 <Route path={ROUTES_NAMES.DRIVER} element={
                     <DriverContainer />
+                } />
+                <Route path={ROUTES_NAMES.CONSTRUCTOR} element={
+                    <ConstructorInfoContainer />
                 } />
             </Routes >
         </>

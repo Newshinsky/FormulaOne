@@ -43,7 +43,7 @@ const defaultState = {
 }
 
 
-export const getRaceScheduleDataDataPageReducer = handleActions({
+export const getRaceScheduleDataPageReducer = handleActions({
 
   [actions.GET_RACE_SCHEDULE_REQUEST.toString()]: (state) => {
     return {
